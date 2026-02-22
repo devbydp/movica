@@ -21,11 +21,11 @@ export default function Search() {
   const [debouncedQuery, setDebouncedQuery] = useState("");
 
   useEffect(() => {
-    const t = setTimeout(
+    const timeoutId = setTimeout(
       () => setDebouncedQuery(searchQuery.trim()),
       SEARCH_DEBOUNCE_MS
     );
-    return () => clearTimeout(t);
+    return () => clearTimeout(timeoutId);
   }, [searchQuery]);
 
   const {
