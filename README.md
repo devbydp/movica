@@ -14,7 +14,7 @@ A React Native (Expo) movie app with trending search, discovery, and movie detai
 
 - Node.js 18+
 - pnpm (or npm / yarn)
-- [Expo Go](https://expo.dev/go) on your device, or iOS Simulator / Android Emulator
+- [Expo Go](https://expo.dev/go) on your device, or iOS Simulator
 
 ## Setup
 
@@ -44,7 +44,7 @@ A React Native (Expo) movie app with trending search, discovery, and movie detai
    pnpm start
    ```
 
-   Then press `i` for iOS simulator or `a` for Android emulator, or scan the QR code with Expo Go.
+   Then press `i` for iOS simulator, or scan the QR code with Expo Go.
 
 ## Scripts
 
@@ -52,7 +52,6 @@ A React Native (Expo) movie app with trending search, discovery, and movie detai
 | ------------------- | ------------------------- |
 | `pnpm start`        | Start Expo dev server     |
 | `pnpm ios`          | Run on iOS simulator      |
-| `pnpm android`      | Run on Android emulator   |
 | `pnpm lint`         | Run ESLint                |
 | `pnpm format`       | Format code with Prettier |
 | `pnpm format:check` | Check formatting          |
@@ -65,7 +64,7 @@ app/
   (tabs)/          # Tab screens: Home, Search, Saved, Profile
   movies/[id].tsx  # Movie detail screen
 components/        # Reusable UI (MovieCard, TrendingCard, SearchBar)
-constants/         # PATHS, COLORS, ENV, icons, images, theme
+constants/         # PATHS, COLORS, ENV, ICONS, IMAGES, THEME
 services/          # TMDB client, Appwrite client
 types/             # Shared TypeScript types (Movie, TrendingMovie, etc.)
 ```
